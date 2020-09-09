@@ -1,7 +1,7 @@
 import settings
 import os
 
-class Picture(QPixmap):
+class Picture():
 
     def __init__(self, _file_name):
         super().__init__()

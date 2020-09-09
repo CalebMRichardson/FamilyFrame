@@ -27,6 +27,8 @@ class MainWindow(QWidget):
 
         self.next_button = QPushButton('Next ->')
         vLayout.addWidget(self.next_button, QtCore.Qt.AlignCenter)
+
+        self.picture_pixmap = QPixmap()
         
         self.setLayout(vLayout)
         self.setGeometry(0, 0, settings.WIDTH, settings.HEIGHT)
@@ -44,11 +46,12 @@ class MainWindow(QWidget):
 
     # update the picture_label's pixmap to the new picture
     def update_picture(self, picture):
-        self.picture_label.setPixmap(picture)
+        self.swap_picture_pixmap(picture)
+        self.picture_label.setPixmap(self.picture_pixmap)
 
     def swap_picture_pixmap(self, picture):
         pixmap = QPixmap(picture.path_to_file)
-        fixed_pixmap = pixmap.scaled(settings.WIDTH, settings.HEIGHT, QtCore.Qt.KeepAspectRation, QtCore.Qt.FastTransformation)
+        fixed_pixmap = pixmap.scaled(settings.WIDTH, settings.HEIGHT, QtCore.Qt.KeepAspectRatio, QtCore.Qt.FastTransformation)
         self.picture_pixmap.swap(fixed_pixmap)
         
         

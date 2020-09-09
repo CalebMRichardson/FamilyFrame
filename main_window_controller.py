@@ -12,10 +12,10 @@ class MainWindowController(ControllerBase):
     def init_controller(self):
         self._view = MainWindow()
         self._view.next_button.clicked.connect(self.next_button_pressed)
-        self._view.update_picture(Picture('fam.jpg'))
+        self._view.update_picture(Picture('photo1.jpg'))
 
     def next_button_pressed(self):
-       self._view.update_picture(Picture('taylor.jpg'))
+       self._view.update_picture(Picture('photo2.jpg'))
         
     def run(self):
         self._view.show()
