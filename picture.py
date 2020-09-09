@@ -1,6 +1,3 @@
-from PyQt5.QtWidgets import (QLabel)
-from PyQt5.QtGui import QPixmap
-from PyQt5 import QtCore
 import settings
 import os
 
@@ -24,9 +21,4 @@ class Picture(QPixmap):
 
         if os.path.exists(self.path_to_file) != True:
             self.error = True
-            return
-        
-        pixmap = QPixmap(self.path_to_file)
-        fixed_pixmap = pixmap.scaled(settings.WIDTH, settings.HEIGHT, QtCore.Qt.KeepAspectRatio, QtCore.Qt.FastTransformation)
-        self.swap(fixed_pixmap)
-        
+            return        

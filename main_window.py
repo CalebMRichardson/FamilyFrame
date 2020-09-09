@@ -48,8 +48,8 @@ class MainWindow(QWidget):
 
     def swap_picture_pixmap(self, picture):
         pixmap = QPixmap(picture.path_to_file)
-        # TODO move over all Pixmap code from Picture to here Picture should just hold the
-        # string path back to the file
+        fixed_pixmap = pixmap.scaled(settings.WIDTH, settings.HEIGHT, QtCore.Qt.KeepAspectRation, QtCore.Qt.FastTransformation)
+        self.picture_pixmap.swap(fixed_pixmap)
         
         
 def main():

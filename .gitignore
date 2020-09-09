@@ -1,6 +1,10 @@
 # emacs backup/redundant files
 *.py~
 
+#virutal env
+virtual_env/family_frame_w
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
