@@ -4,7 +4,6 @@ import os
 class Picture():
 
     def __init__(self, file_path):
-        super().__init__()
 
         self.error = False
         self.path_to_file = file_path
