@@ -12,10 +12,10 @@ class Picture():
 
         if self.error == True:
             self.init_photo(settings.BROKEN_LINK)
-            print('Picture Error: Broken Link')
 
     def init_photo(self):
 
         if os.path.exists(self.path_to_file) != True:
             self.error = True
-            return        
+        else:
+            self.error = False

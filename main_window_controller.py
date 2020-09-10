@@ -19,7 +19,7 @@ class MainWindowController(ControllerBase):
         self.load()
         self._view.next_button.clicked.connect(self.next_button_pressed)
         if len(self.pictures) > 0:
-            self._view.update_picture(self.pictures[self.index])
+            self._view.set_picture(self.pictures[self.index])
 
     def next_button_pressed(self):
         if (self.index) == len(self.pictures) -1:
