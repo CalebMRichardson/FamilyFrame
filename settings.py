@@ -1,6 +1,6 @@
 import os
 
-WIDTH = 1200
+WIDTH = 1280
 HEIGHT = 800
 
 BASE_DIR = os.getcwd()

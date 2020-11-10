@@ -5,7 +5,6 @@ from PyQt5 import QtCore
 import os, settings
 
 class MainWindow(QWidget):
-
     
     def __init__(self):
         super().__init__()
@@ -80,7 +79,8 @@ class MainWindow(QWidget):
         self.swap_picture_pixmap(picture)
         self.picture_label.setPixmap(self.picture_pixmap)
         self.fade_in_label()
-          
+
+        
 def main():
     
     import sys

@@ -4,6 +4,9 @@
 #virutal env
 virtual_env/family_frame_w
 
+#cred files
+CredFile.ini
+key.key
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
