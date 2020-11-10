@@ -1,5 +1,6 @@
 # emacs backup/redundant files
 *.py~
+*.txt~
 
 #virutal env
 virtual_env/family_frame_w

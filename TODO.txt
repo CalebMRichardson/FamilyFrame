@@ -1,0 +1,53 @@
+### TODO ###
+
+// Settings
+   
+   - Add -
+		Picture Transition Options
+			Randomize
+			Timers
+		Wifi Settings
+	 
+
+       
+
+// Settings_Window
+
+	- Add -
+		Wifi Window
+
+// Settings_Window_Controller
+
+// Main_Window
+   
+   - Add -
+		Picture Buffers ( Front and Back ) for transitioning between pictures
+
+// Main_Window_Controller
+   
+   - Add -
+		On Touch on Right side of screen move forward one picture
+		On Touch on Left side of screen move backward one picture
+   
+   - Remove - 
+		Next Button ( transition to Left/Right Screen touches ) 
+	
+// Email_Login
+
+	- Add - 
+	
+	
+// Email_Login_Controller
+
+// Navigation
+   
+   - Add -
+		Add Navigation to Settings Window
+		Add Navigation to Login Window
+
+// Password Management 
+	
+	- Add - 
+		Credentials.py
+		
+// GitHub update
